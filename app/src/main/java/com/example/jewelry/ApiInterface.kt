@@ -8,9 +8,9 @@ import retrofit2.http.Query
 interface ApiInterface {
     @GET("login.php")
     fun loginCall(
-        @Query("Username") Username: String?,
-        @Query("Password") Password: String?
-    ): Call<User?>?
+        Username: String,
+        Password: String
+    ): Call<User>
 
     @POST("register.php")
     fun regCall(

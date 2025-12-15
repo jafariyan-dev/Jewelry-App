@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="username"
+        android:id="@+id/Username"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/Password"
+        android:layout_below="@id/Username"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Password"
+        android:id="@+id/radioGroup">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ادمین"
+            android:id="@+id/radioAdmin"
+            android:textSize="20sp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="عادی"
+            android:id="@+id/radioNormal"
+            android:textSize="20sp"
+            android:layout_below="@id/radioAdmin"/>
+    </RadioGroup>
+    <Button
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/registerBtn"
+        android:layout_below="@id/radioGroup"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>

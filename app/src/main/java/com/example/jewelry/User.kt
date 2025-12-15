@@ -1,13 +1,9 @@
 package com.example.jewelry
 
 public class User() {
-    lateinit var Response:String
     lateinit var Username:String
     lateinit var Password:String
-
-    fun getApiResponse(): String {
-        return Response
-    }
+    var IsAdmin:Boolean = false
 
     fun getApiName(): String {
         return Username

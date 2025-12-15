@@ -10,11 +10,12 @@ interface ApiInterface {
     fun loginCall(
         Username: String,
         Password: String
-    ): Call<User>
+    ): Call<DBResponse>
 
     @POST("register.php")
     fun regCall(
-        @Query("Username") Username: String?,
-        @Query("Password") Password: String?
-    ): Call<User?>?
+        Username: String,
+        Password: String,
+        IsAdmin:Boolean
+    ): Call<DBResponse>
 }
